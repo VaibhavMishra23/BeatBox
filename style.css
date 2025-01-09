@@ -1,0 +1,47 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('./backimg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    color: rgb(232, 255, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+    font-size: 13px;
+}
+.common{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.577);
+    width: 75px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+.common:hover{
+    cursor: pointer;
+}
+.commonLetter{
+    font-size: 20px;
+    color: white;
+}
+.common.active {
+    transform: scale(1.2);
+    border-color: yellow;
+    transition: transform 0.2s, border-color 0.2s;
+}
